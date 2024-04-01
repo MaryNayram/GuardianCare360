@@ -1,0 +1,86 @@
+GuardianCare360
+
+Author: Mary Doh  
+Organisation: E-learning Provider  
+Date Created: 30/03/2024
+
+Introduction
+
+Welcome to GuardianCare360, an innovative web-based application designed to provide cybersecurity training specifically tailored for healthcare professionals in Ghana. This README document serves as a comprehensive guide on setting up and running the GuardianCare platform, ensuring a seamless experience for both administrators and staff members.
+
+Scope
+
+GuardianCare's primary objective is to equip healthcare staff in Ghana with essential cybersecurity skills and knowledge. The system facilitates registration, login, and access to various cybersecurity modules. The platform aims to enhance staff awareness and behaviour towards cybersecurity threats prevalent in the healthcare sector.
+
+System Overview
+
+GuardianCare comprises the following components:
+Frontend: Developed using HTML5, CSS, and JavaScript for an interactive user interface.
+Backend: Powered by PHP to handle registration, login, logout, course access, and other functionalities.
+Database: Utilizes MySQL for data storage and retrieval.
+Localhost Hosting: The PHP backend is hosted on your localhost environment for real-time action and functionality testing.
+Web Server: Supports Apache or any suitable server environment for PHP execution.
+
+Functional Requirements
+
+GuardianCare's functional requirements are outlined through key use cases:
+
+Register (UC-1)
+   - Staff registration with name, email, password, and organization details.
+   - Post-registration login access.
+
+Login (UC-2)
+   - Staff login with email and password after registration confirmation.
+   - Access to course modules and other functionalities upon successful login.
+
+Logout (UC-3)
+   - Staff logout from the system to end session access.
+   - Redirect to the login page after logout.
+
+View Course Modules (UC-4)
+   - Staff view available course modules upon login.
+   - Access to course descriptions and content overview.
+
+View Course Content (UC-5)
+   - Staff view detailed content of selected course modules.
+   - Access to multimedia content and other functionalities within modules.
+
+Create Course Content (UC-6)
+   - Administrator creates and manages course content.
+   - Addition, update, and deletion of course modules.
+
+Non-Functional Requirements
+
+GuardianCare adheres to essential non-functional requirements:
+- Security: Protection of staff data, course content, and system integrity.
+- Performance: Responsive service across locations and user loads.
+- Scalability: Ability to accommodate growth and new content.
+- Availability: Minimal downtime and robust disaster recovery measures.
+
+Installation Instructions
+
+1. Clone the Repository:
+https://github.com/MaryNayram/GuardianCare360.git
+
+2. Navigate to Project Directory:
+      cd GuardianCare
+
+  3. Install Dependencies:
+     npm install
+   
+4. Set Up Database:
+   - Create MySQL database named `guardiancare360` or whatever you please.
+   - Import database schema from `database/guardiancare360.sql`.
+
+5. Configure Environment Variables:
+   - Create `.env` file in project root.
+   - Add required environment variables (e.g., DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE).
+
+6. Start the Application:
+   - Ensure Apache server and PHP are running.
+   - Access `http://localhost/GuardianCare360` in your web browser.
+
+Conclusion
+GuardianCare revolutionizes cybersecurity training for healthcare professionals. Follow the instructions above to set up the platform seamlessly and empower your staff with essential cybersecurity skills.
+
+This enhanced README file emphasizes the frontend-backend architecture using HTML5, CSS, JavaScript, and PHP technologies, along with instructions for localhost hosting, ensuring a convincing and informative guide for users and administrators.
